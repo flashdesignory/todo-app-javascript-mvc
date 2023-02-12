@@ -1,0 +1,30 @@
+{
+  "name": "todo-app-javascript-mvc",
+  "version": "1.0.0",
+  "description": "A simple todo mvc app.",
+  "engines": {
+    "node": ">=18.13.0",
+    "npm": ">=8.19.3"
+  },
+  "scripts": {
+    "dev": "http-server ./ -p 9000 -c-1 --cors -o",
+    "lint:js": "eslint ./ --fix",
+    "lint:css": "stylelint \"**/*.css\" --fix",
+    "pretty:check": "prettier ./ --check",
+    "pretty:write": "prettier ./ --write",
+    "format": "npm run pretty:write ; npm run lint:js ; npm run lint:css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.33.0",
+    "eslint-config-prettier": "^8.6.0",
+    "prettier": "2.8.3",
+    "stylelint": "^14.16.1",
+    "stylelint-config-prettier": "^9.0.4",
+    "stylelint-config-standard": "^29.0.0"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}
