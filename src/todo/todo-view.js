@@ -76,7 +76,7 @@ export class TodoView {
     const elementsToChange = '[data-completed="true"]';
     this.ref.querySelectorAll(elementsToChange).forEach((element) => element.remove());
     this.onClear();
-  };
+  }
 
   handleToggle(id) {
     this.onToggle(id);

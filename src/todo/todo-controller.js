@@ -18,7 +18,7 @@ export class TodoController {
     this.view.bindCallback("onToggle", this.toggleItem);
     this.view.bindCallback("onUpdate", this.updateItem);
     this.view.bindCallback("onDelete", this.removeItem);
-    this.view.bindCallback("onClear", this.removeCompletedItems)
+    this.view.bindCallback("onClear", this.removeCompletedItems);
 
     this.router.initRouter(this.update);
   }
