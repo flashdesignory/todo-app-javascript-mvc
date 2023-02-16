@@ -137,6 +137,9 @@ export class TodoView {
     const activeTodos = todos.filter((todo) => !todo.completed);
     this.statusDisplay.textContent = `${activeTodos.length} ${activeTodos.length === 1 ? "item" : "items"} left!`;
 
+    // update clearButton
+    this.clearButton.disabled = activeTodos.length === todos.length;
+
     // decide which todos to show
     todos.forEach((todo) => {
       const element = document.getElementById(todo.id);
