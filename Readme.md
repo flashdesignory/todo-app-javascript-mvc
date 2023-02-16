@@ -1,6 +1,7 @@
 # Todo App MVC
 
 [![pages-build-deployment](https://github.com/flashdesignory/todo-app-javascript-mvc/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/flashdesignory/todo-app-javascript-mvc/actions/workflows/pages/pages-build-deployment)
+[![Quality Checks](https://github.com/flashdesignory/todo-app-javascript-mvc/actions/workflows/quality.yml/badge.svg)](https://github.com/flashdesignory/todo-app-javascript-mvc/actions/workflows/quality.yml)
 
 ## Preview
 
