@@ -2,7 +2,7 @@ import { TodoModel } from "./todo-model.js";
 import { TodoTemplate } from "./todo-template.js";
 import { TodoView } from "./todo-view.js";
 import { TodoController } from "./todo-controller.js";
-import { useStorage } from "./use-storage.js";
+import { useStorage } from "./hooks/use-storage.js";
 
 export class TodoApp {
   constructor({ ref, data = [] }) {

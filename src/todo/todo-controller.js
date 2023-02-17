@@ -1,4 +1,4 @@
-import { useRouter } from "./use-router.js";
+import { useRouter } from "./hooks/use-router.js";
 
 export class TodoController {
   constructor(model, view) {
