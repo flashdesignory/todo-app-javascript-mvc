@@ -110,7 +110,7 @@ export class TodoView {
       this.toggle.parentElement.classList.add("hidden");
 
       this.filters.classList.add("hidden");
-      this.statusDisplay.textContent = "";
+      this.statusDisplay.textContent = "0 items left!";
       return;
     }
 
