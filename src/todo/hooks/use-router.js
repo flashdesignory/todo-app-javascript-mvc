@@ -13,6 +13,7 @@ export const useRouter = (callback) => {
    */
   const handleChange = () => {
     current = document.location.hash;
+    /* istanbul ignore else */
     if (onChange) onChange(document.location.hash);
   };
 
@@ -27,7 +28,15 @@ export const useRouter = (callback) => {
     window.addEventListener("load", handleChange);
   };
 
+  /**
+   * Removes listeners
+   */
+  const disableRouter = () => {
+    window.removeEventListener("hashchange", handleChange);
+    window.removeEventListener("load", handleChange);
+  };
+
   const getRoute = () => current.split("/").slice(-1)[0];
 
-  return { initRouter, getRoute };
+  return { initRouter, getRoute, disableRouter };
 };
