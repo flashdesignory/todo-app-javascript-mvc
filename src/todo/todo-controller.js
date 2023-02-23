@@ -20,6 +20,10 @@ export class TodoController {
     this.view.bindCallback("onDelete", this.removeItem);
     this.view.bindCallback("onClear", this.removeCompletedItems);
 
+    // render initial todos
+    const todos = this.model.getTodos();
+    todos.map((todo) => this.view.addItem(todo));
+
     this.router.initRouter(this.update);
   }
 
@@ -29,7 +33,7 @@ export class TodoController {
 
   addItem(task) {
     const todo = this.model.addItem(task);
-    this.view.addItem({ todo });
+    this.view.addItem(todo);
     this.update();
   }
 
@@ -50,6 +54,7 @@ export class TodoController {
 
   removeCompletedItems() {
     this.model.removeCompletedItems();
+    this.view.removeCompletedItems();
     this.update();
   }
 }
