@@ -8,7 +8,7 @@
   },
   "type": "module",
   "scripts": {
-    "dev": "http-server ./ -p 9000 -c-1 --cors -o",
+    "dev": "http-server ./ -p 9001 -c-1 --cors -o",
     "lint:js": "eslint ./ --fix",
     "lint:css": "stylelint \"**/*.css\" --fix",
     "pretty:check": "prettier ./ --check",

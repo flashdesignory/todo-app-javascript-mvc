@@ -67,6 +67,12 @@ export class TodoList {
         default:
           shouldShow = true;
       }
+
+      // update task if it changed
+      if (element.dataset.task !== todo.task) {
+        element.dataset.task = todo.task;
+      }
+
       element.style.display = shouldShow ? "flex" : "none";
     });
   }
