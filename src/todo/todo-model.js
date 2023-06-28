@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import { Todo, Partial, Storage } from "./types/types.js";
-import { nanoid } from "./utils/id.js";
+import { nanoid } from "./utils/ids.js";
 
 /**
  * Function that creates a todo, based on the task input.

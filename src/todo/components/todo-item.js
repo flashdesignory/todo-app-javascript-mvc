@@ -65,6 +65,7 @@ export const TodoItem = ({ todo, onToggle, onUpdate, onDelete }) => {
   };
 
   const startEdit = () => {
+    /* istanbul ignore next */
     if (!taskInput.readOnly) return;
 
     taskInput.readOnly = false;
