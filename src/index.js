@@ -17,3 +17,4 @@ new TodoApp({ ref: document.querySelector("#root") /* ,data */ });
 
 // temp
 window.top.postMessage({ type: "app-ready", status: "success" });
+window.postMessage({ type: "app-ready", status: "success" });
