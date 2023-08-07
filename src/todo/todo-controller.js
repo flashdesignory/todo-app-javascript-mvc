@@ -25,6 +25,9 @@ export class TodoController {
     todos.map((todo) => this.view.addItem(todo));
 
     this.router.initRouter(this.update);
+
+    // temp
+    window.top.postMessage({ type: "app-ready", status: "success" });
   }
 
   update() {
