@@ -14,3 +14,6 @@ import { TodoApp } from "./todo/todo-app.js";
 ]; */
 
 new TodoApp({ ref: document.querySelector("#root") /* ,data */ });
+
+// temp
+window.top.postMessage({ type: "app-ready", status: "success" });
