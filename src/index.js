@@ -16,4 +16,5 @@ import { TodoApp } from "./todo/todo-app.js";
 new TodoApp({ ref: document.querySelector("#root") /* ,data */ });
 
 // temp
+window.onmessage = (event) => console.log(event.data);
 window.top.postMessage({ type: "app-ready", status: "success" }, "*");
