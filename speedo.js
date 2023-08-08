@@ -3,7 +3,7 @@ const appId = "1234"
 
 window.onmessage = async (event) => {
     // ensure we only let legit functions run...
-    if (event.data.id !== appId) return;
+    if (event.data.id !== appId || event.data.type !== "speedo") return;
 
     const testFunction = new Function('return ' + event.data.fn)();
     if (testFunction) {
